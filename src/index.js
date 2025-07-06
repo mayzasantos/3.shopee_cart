@@ -12,11 +12,11 @@ const item2 = await createItem("Monitor", 5, 97.99)
 const item3 = await createItem("Teclado", 1, 35.99)
 
 // Adcionando o item1 ao carrinho de compra
-await Cart.addCart(cart, item1)
-await Cart.addCart(cart, item2)
+await Cart.addItem(cart, item1)
+await Cart.addItem(cart, item2)
 
 // Adicionando o item a lista de desejos
-await Cart.addCart(wishList, item3)
+await Cart.addItem(wishList, item3)
 
 //Mostrando os itens do carrinho
 await Cart.cartList(cart)
