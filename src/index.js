@@ -20,3 +20,10 @@ await Cart.addItem(wishList, item3)
 
 //Mostrando os itens do carrinho
 await Cart.cartList(cart)
+
+// Deletando um item do carrinho
+await Cart.deleteItem(cart, "Mouse")
+
+//Mostrando os itens do carrinho
+await Cart.cartList(cart)
+
