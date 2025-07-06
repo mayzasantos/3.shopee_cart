@@ -49,3 +49,7 @@ export async function cartList(userCart){
 }
 
 //-> Calcular o total do carrinho
+export async function calculateTotal(userCart) {
+    const result = userCart.reduce((total, item)=> total + item.subtotal(),0)
+    console.log(`\n💸 Total: R$ ${result}`)
+}

@@ -30,4 +30,7 @@ await Cart.removeItem(cart, item2)
 //Mostrando os itens do carrinho
 await Cart.cartList(cart)
 
+// Mostrando o total do carrinho
+await Cart.calculateTotal(cart)
+
 
