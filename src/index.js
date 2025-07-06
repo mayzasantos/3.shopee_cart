@@ -3,8 +3,8 @@ import createItem from './services/item.js'
 
 const cart = []
 const wishList = []
-console.log("🛒_______________________🛒")
-console.log("Welcome to the Shopee Cart!\n")
+
+console.log("\nWelcome to the Shopee Cart!")
 
 // Criando os itens
 const item1 = await createItem("Mouse", 2, 20.99)
@@ -18,12 +18,16 @@ await Cart.addItem(cart, item2)
 // Adicionando o item a lista de desejos
 await Cart.addItem(wishList, item3)
 
+
+// // Deletando um item do carrinho
+// await Cart.deleteItem(cart, "Mouse")
+
+// //Mostrando os itens do carrinho
+// await Cart.cartList(cart)
+
+await Cart.removeItem(cart, item2)
+
 //Mostrando os itens do carrinho
 await Cart.cartList(cart)
 
-// Deletando um item do carrinho
-await Cart.deleteItem(cart, "Mouse")
-
-//Mostrando os itens do carrinho
-await Cart.cartList(cart)
 
